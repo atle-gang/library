@@ -16,8 +16,8 @@ class Library {
      *
      * @param {Book} book - The book object to add to the library.
      */
-    addBook() {
-
+    addBook(book) {
+        this.books.push(book);
     }
 
     /**
@@ -25,8 +25,17 @@ class Library {
      *
      * @param {Book} book - The book object to add to the library.
      */
-    removeBook() {
+    removeBook(book) {
+        this.books.pop(book);
+    }
 
+    /**
+     * Returns array with books objects.
+     *
+     * 
+     */
+    listBooks() {
+        return this.books;
     }
 }
 
