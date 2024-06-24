@@ -35,7 +35,10 @@ class Library {
      * 
      */
     listBooks() {
-        return this.books;
+        for (let i = 0; i < this.books.length; i++) {
+            let book = this.books[i];
+            console.log(`Title - ${book.title} | Author - ${book.author} | Pages - ${book.pages} | Published Year - ${book.publishedYear}`);
+        }
     }
 }
 
